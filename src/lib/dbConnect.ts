@@ -6,10 +6,10 @@ type ConnectionObject = {
 
 const connection: ConnectionObject = {}
 
-async function dbConnect(): Promise<void> {
+async function dbConnect(): Promise<void> { //here void depicts that we dont care what type of data is getting returned
     if(connection.isConnected) {
-      console.log("ALready connected to database")
-      return 
+        console.log("ALready connected to database")
+        return 
     }
 
     try {

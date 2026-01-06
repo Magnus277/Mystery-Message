@@ -17,7 +17,7 @@ export async function POST(request: Request){
                 message: "Error registering user"
             },
             {
-              status: 500
+                status: 500
             }
         )
     }
